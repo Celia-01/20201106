@@ -1,8 +1,8 @@
 <？php
-    error_reporting（0）;
-    
+    error_reporting（0）;<!--不輸出任何錯誤-->
+   
     $ conn = mysqli_connect（ “ localhost”， “ root”， “”， “ mydb”）;
-    如果（mysqli_connect_error（$ conn））
+    如果（mysqli_connect_error（$ conn））<!--傳回連結資料庫的錯誤碼。如果沒有錯誤發生則返回0--＞
         die（“資料庫連線錯誤”）;
 
     mysqli_set_charset（$ conn，“ utf8”）;
